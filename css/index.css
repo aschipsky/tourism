@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+
 body {
     background-color: #ffffff;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px;
     color: #000000;
     padding: 0;
@@ -34,8 +35,9 @@ a:hover, a:focus {
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
-    text-align: right;
+    text-align: center;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgb(105, 105, 105);
 }
@@ -54,7 +56,7 @@ a:hover, a:focus {
 }
 .navbar {
     background-color: #10152183;
-    height: 65px;
+    height: 75px;
 }
 
 .parallax-header {
@@ -90,41 +92,84 @@ a:hover, a:focus {
     height: 185px;
     text-align: center;
     font-weight: 1000;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
 
+.nav-title ._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
 
 /** Header and **/
 
 /** Section one start **/
 
-section .visit-container_one {
-    background-color: #eeeeee;
+.museum-block {
+    background: rgb(255, 255, 255);
+    height: 538px;
 }
 
-section .visit-container_two {
-    background-color: #e2e2e2;
+.museum-left-right {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
-.visit-text {
-    font-style: normal;
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: 0.04em;
-    margin-bottom: 60px;
-    margin-top: 60px;
-    margin-left: 60px;
+.museum-left-right .left-museumone {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    background-image: url(../img/museumone.jpg);
 }
 
-.visit-photo_one {
-    width: 439px;
-    height: 408px;
+.museum-left-right .left-museumtwo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    background-image: url(../img/museumtwo.jpg);
 }
 
-.visit-photo_two {
-    width: 346px;
-    height: 363px;
+.museum-left-right .right-museumone {
+    display: flex;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(
+    -225deg, #fff 0%, rgba(255,255,255,0) 40%, rgba(0,255,255,0) 60%, cyan 100%),linear-gradient(
+    45deg, #3023AE 0%, #f09 100%);
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    border-radius: 88% 12% 86% 14% / 11% 88% 12% 89% ;
 }
 
+.museum-left-right .right-museumtwo {
+    display: flex;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(
+    -225deg, #fff 0%, rgba(255,255,255,0) 40%, rgba(0,255,255,0) 60%, cyan 100%),linear-gradient(
+    45deg, #3023AE 0%, #f09 100%);
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    border-radius: 43% 57% 80% 20% / 33% 49% 51% 67% ;
+}
+
+.right-text-museum {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
 
 .header-poster {
     width: 100%;
@@ -153,26 +198,356 @@ section .visit-container_two {
     text-align: center;
 }
 
-/** Section one end **/
+/** Section end **/
 
 
-/** Section two start **/
-
-.blog_photo {
-    background-color: blueviolet;
-    display: flex;
-}
-
-.blog-about {
-    background-color: brown;
-    display: flex;
-}
+/** Section start **/
 
 
-/** Section two end **/
+/** Section end **/
 
 
 /** Section  start **/
+
+
+
+/** Section start **/
+
+.block-left-right {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background: #28349E;
+}
+
+.block-left-right .left-bona {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    background-image: url(../img/Bona.jpg);
+}
+
+.parallax-bona {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/Bona.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-left-right .right-one {
+    display: flex;
+    width: 50%;
+    background: #28349E;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-left-right .left-garden {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    background-image: url(../img/garden.jpg);
+}
+
+.parallax-garden {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/garden.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-left-right .right-two {
+    display: flex;
+    width: 50%;
+    background: #28328f;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rigt-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.right-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.header-stadion {
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/stadion.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-stadion {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/stadion.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-left-right .left-track {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    background-image: url(../img/track.jpg);
+}
+
+.parallax-track {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/track.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-left-right .left-ladders {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 50%;
+    background-image: url(../img/ladders.jpg);
+}
+
+.parallax-ladders {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/ladders.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/** Section and **/
+
+/** Section start **/
+
+
+
+/** Section and **/
+
+
+/** Section start **/
+
+/* .section-left-right {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.section-left-right .left {
+    width: 50%;
+}
+
+.position-relative {
+position: relative;
+}
+
+.section-left-right .right {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-left-right .right  img {
+       width: 70%;
+       position: absolute;
+       top: 0;
+       left: 3%;
+       height: 350px;
+}
+
+.block-desc {
+    position: absolute;
+    background:#7DEFFF;
+    height: 450px;
+    width: 350px;
+    bottom: 0;
+    left: 12%;
+} */
+
+/** Section and **/
+
+
+/** Section start **/
+
+.header-burning {
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/burning.png);
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-burning {
+    background: #000;
+    background: linear-gradient(
+            rgb(0, 0, 0, 0.3),
+            rgb(0, 0, 0, 0.8)
+        ),
+        url(/img/burning.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.second-block {
+    background: rgb(4, 24, 37);
+    position: relative;
+    height: 400px;
+    padding: 30px;
+    margin: 100px 0;
+}
+
+
+.second-block img {
+    position: absolute;
+    top: -40px;
+    right: 50px;
+    height: 200px
+}
+
+.second-title {
+    width: 16em;
+    text-align: center;
+    font-size: 36px;
+    margin-left: -99px;
+    padding-top: 16px;
+}
+
+.second-block h3 {
+    height: 152px;
+    padding-top: 35px;
+    padding-left: 152px;
+    font-size: 40px;
+}
+
+.second-block p {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+/** Section and **/
+
+
+/** Section start **/ 
+
+.item-left-right {
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+.item-left-right .left {
+    display: flex;
+    width: 50%;
+    background: #1167a0;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-photo {
+    height: 274px;
+    width: 362px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-footer-group;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    clip-path: polygon(50% 0%, 100% 16%, 100% 86%, 50% 100%, 50% 100%, 0 86%, 0 16%);
+}
+
+.item-title {
+    text-align: center;
+}
+
+.item-text {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 26em;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.item-left-right .right {
+    display: flex;
+    width: 50%;
+    background: #001aff;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** Section and **/
+
+
+/** Section start **/
+
+.carousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-item {
+    display: flex;
+    max-height: 550px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+/** Section and **/
+
+
+/** Section start **/ 
 
 .complex {
     display: flex;
@@ -316,218 +691,6 @@ section .visit-container_two {
 
 /** Section  end **/
 
-/** Section start **/
-
-.block-left-right {
-    display: flex;
-    width: 100%;
-    height: 500px;
-    background: #28349E;
-}
-
-.block-left-right .left-one {
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    width: 50%;
-    background-image: url(../img/Bona.jpg);
-}
-
-.parallax-bona {
-    background: #000;
-    background: linear-gradient(
-            rgb(0, 0, 0, 0.3),
-            rgb(0, 0, 0, 0.8)
-        ),
-        url(/img/Bona.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.block-left-right .right-one {
-    display: flex;
-    width: 50%;
-    background: #28349E;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.block-left-right .left-two {
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    width: 50%;
-    background-image: url(../img/garden.jpg);
-}
-
-.parallax-garden {
-    background: #000;
-    background: linear-gradient(
-            rgb(0, 0, 0, 0.3),
-            rgb(0, 0, 0, 0.8)
-        ),
-        url(/img/garden.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.block-left-right .right-two {
-    display: flex;
-    width: 50%;
-    background: #28328f;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.rigt-title {
-    font-size: 36px;
-    margin-bottom: 50px;
-}
-
-.right-text {
-    font-size: 24px;
-    font-weight: 400;
-    color: white;
-}
-
-/** Section and **/
-
-/** Section start **/
-
-.item-left-right {
-    display: flex;
-    width: 100%;
-    height: 700px;
-}
-
-.item-left-right .left {
-    display: flex;
-    width: 50%;
-    background: #1167a0;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.item-photo {
-    height: 274px;
-    width: 362px;
-    margin-left: auto;
-    margin-right: auto;
-    display: table-footer-group;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.item-text {
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    width: 26em;
-    margin-left: auto;
-    margin-right: auto;
-} 
-
-.item-left-right .right {
-    display: flex;
-    width: 50%;
-    background: #001aff;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/** Section and **/
-
-
-/** Section start **/
-
-.section-left-right {
-    display: flex;
-    width: 100%;
-    height: 500px;
-    position: relative;
-}
-
-.section-left-right .left {
-    width: 50%;
-}
-
-.position-relative {
-position: relative;
-}
-
-.section-left-right .right {
-    display: flex;
-    width: 50%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-left-right .right  img {
-       width: 70%;
-       position: absolute;
-       top: 0;
-       left: 3%;
-       height: 350px;
-}
-
-.block-desc {
-    position: absolute;
-    background:#7DEFFF;
-    height: 450px;
-    width: 350px;
-    bottom: 0;
-    left: 12%;
-}
-
-/** Section and **/
-
-
-/** Section start **/
-
-.second-block {
-    background: olive;
-    position: relative;
-    height: 400px;
-    padding: 30px;
-    margin: 100px 0;
-}
-
-
-.second-block img {
-    position: absolute;
-    top: -40px;
-    right: 50px;
-    height: 200px
-}
-
-.second-block h3 {
-    height: 150px;
-    padding-top: 60px;
-    padding-left: 161px;
-    font-size: 40px;
-}
-
-.second-block p {
-    font-size: 22px;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-}
-
-
-/** Section and **/
-
 /** foter start **/
 
 .footer {
@@ -561,28 +724,62 @@ position: relative;
 /** foter end **/
 
 
-@media only screen and (max-width: 860px) {
-    .img-fluid_two {
-        height: 330px;
-        width: 220px;
+@media only screen and (max-width: 1601px) {
+    
+}
+
+@media only screen and (max-width: 1300px) {
+    .complex_title {
+        font-size: 43px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    
-   
+@media only screen and (max-width: 1199px) {
+    .right-text-museum {
+        font-size: 16px;
+    }
+    .second-block {
+        height: 325px;
+    }
+    .second-block img {
+        height: 160px;
+    }
+    .second-block h3 {
+        font-size: 24px;
+    }
+    .second-block p {
+        font-size: 16px;
+    }
+    .complex_text {
+        font-size: 30px;
+    }
+    .complex_title {
+        font-size: 38px;
+    }
+    .rigt-title {
+        margin-bottom: 10px;
+    }
 }
 
-   @media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 1020px) {
+    .rigt-title {
+        font-size: 30px;
+    }
+    .right-text {
+        font-size: 20px;
+    }
+    .complex_title {
+        font-size: 35px;
+    }
 }
 
-   @media only screen and (max-width: 350px) {
-    
+@media only screen and (max-width: 1020px) {
+    .second-block h3 {
+        margin-left: -94px;
+        height: 126px;
+    }
+    .second-block img {
+        height: 144px;
+    }
 }
-
-
-
-
-
 
