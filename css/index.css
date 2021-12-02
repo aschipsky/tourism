@@ -167,7 +167,6 @@ a:hover, a:focus {
 
 .right-text-museum {
     font-size: 20px;
-    font-weight: 400;
     color: white;
 }
 
@@ -450,17 +449,10 @@ position: relative;
 
 .second-title {
     width: 16em;
+    height: 152px;
     text-align: center;
     font-size: 36px;
-    margin-left: -99px;
     padding-top: 16px;
-}
-
-.second-block h3 {
-    height: 152px;
-    padding-top: 35px;
-    padding-left: 152px;
-    font-size: 40px;
 }
 
 .second-block p {
@@ -783,3 +775,108 @@ position: relative;
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .right-text-museum {
+        font-size: 14px;
+    }
+    .item-left-right {
+        height: 650px;
+    }
+    .item-text {
+        font-size:  16px;
+    }
+    .item-photo {
+        height: 272px;
+        width: 342px;
+    }
+    .complex_blog-blog {
+        height: 240px;
+    }
+    .complex_blog {
+        height: 240px;
+    }
+    .complex_text {
+        font-size: 26px;
+    }
+    .complex_title {
+        font-size: 31px;
+    }
+    .complex_photo {
+        height: 370px;
+    }
+    .complex_blog-title {
+        font-size: 20px;
+    }
+    .blog-text {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .works_item {
+        height: 215px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .item-text {
+        font-size: 14px;
+    }
+    .complex_text {
+        font-size: 22px;
+    }
+    .complex_title {
+        font-size: 27px;
+    }
+    .blog-text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .second-title {
+        width: 23em;
+        margin-top: 55px;
+        margin-top: 90px;
+    }
+    .second-block h3 {
+        margin-left: -52px;
+        height: 60px;
+    }
+    .second-block {
+        height: 413px;
+    }
+    .second-block img {
+        right: 84px;
+    }
+    .right-text {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .item-left-right {
+        height: 500px;
+    }
+    .item-photo {
+        width: 280px;
+        height: 220px;
+    }
+    .item-text {
+        font-size: 10px;
+    }
+    .item-title {
+        font-size: 20px;
+    }
+    .blog-text {
+        font-size: 13px;
+        width: 14em;
+    }
+    .complex_blog-title {
+        font-size: 18px;
+    }
+    .complex_title {
+        font-size: 22px;
+    }
+    .complex_text {
+        font-size: 18px;
+    }
+}
