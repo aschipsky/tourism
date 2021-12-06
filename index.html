@@ -8,73 +8,125 @@
     <title>Туризм Кремнечиною</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">   
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" href="img/favicon-32x32.png" >
     <link rel="icon" href="img/favicon-16x16.png" >
 </head>
 
 <body>
-    <header id="header" class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="CyberSecurity">Kremenets</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav mr-auto mb-3 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link " href="#home">Головна</a>
-              </li>
-              <li id="">
-                <a class="nav-link" href="#museums">Музеї</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#attractions">Пам'ятки</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#sortive-complex">Сортивний комплекс</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#a-little-extreme">Трішки екстрималу</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#religious-places">Релігійні місця</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#landscape">Пейзаж</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#recreation-complex">Відпочинковий комплекс</a>
-              </li>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://tourizm.netlify.app/">Kremenets</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="#home">Головна</a>
+          </li>
+          <li id="">
+            <a class="nav-link" href="#museums">Музеї</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#attractions">Пам'ятки</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarResponsiveMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Більше
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarResponsiveMenuLink">
+              <li><a class="dropdown-item " href="#sortive-complex">Сортивний комплекс</a</li>
+              <li><a class="dropdown-item " href="#a-little-extreme">Трішки екстрималу</a></li>
+              <li><a class="dropdown-item " href="#religious-places">Релігійні місця</a></li>
+              <li><a class="dropdown-item " href="#landscape">Пейзаж</a></li>
+              <li><a class="dropdown-item " href="#recreation-complex">Відпочинковий комплекс</a></li>
             </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header id="home">
+  
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('./img/header.png')">
+          <div class="carousel-caption">
+            <h5>Туризм Кременечиною</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <section id="home" class="parallax-header header-home d-flex align-items-center justify-cotent-center">
-      <div class="container justify-cotent-center main-desc">
-        <div>
-          <h1 class="nav-title _anim-items _anim-no-hide">Туризм Кременечиною</h1>
+        <div class="carousel-item" style="background-image: url('./img/headerone.png')">
+          <div class="carousel-caption">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./img/headertwo.png')">
+          <div class="carousel-caption">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
 
-    <section id="museums">
-      <div class="museum-block">
+  <section id="introduction">
+    <div class="container museum">
+      <div class="row m-0 ">
+        <div class="col-12 col-md-6 left-museumone"></div>
+        <div class="col-12 col-md-6 align-items-center">
+          <div class="right-museumone">
+            <p class="right-text-museum animate__animated animate__fadeInUp animate__delay-2s">Дізнатися про Кременець можна значно більше, відвідавши родинну садибу Словацьких, нині – обласний літературно-меморіальний музей Юліуша Словацького.
+                Фонди музею налічують понад 50 тисяч експонатів. Тут проводять майстер-класи з народних промислів, можна придбати сувеніри. У літературно-меморіальному музеї Юліуша Словацького є вісім кімнат-залів, кожна з яких присвячена певному періоду життя відомого поета.  Цей музей, єдиний в Україні, присвячений життю драматурга.</p>
+          </div>    
+        </div>
+      </div>
+    </div> 
+  </section>
+  <section id="introduction">
+    <div class="container museum">
+      <div class="row m-0 ">
+        
+        <div class="col-12 col-md-6 align-items-center">
+          <div class="right-museumtwo">
+            <p class="right-text-museum">Також дізнатися про Кременець можна значно більше, відвідавши  Краєзнавчий музей. На сьогодні в музеї знаходиться близько 70 тисяч експонатів. Також представлені експонати, які надійшли на виставку із Запоріжжя. Музей починається із залу природи. Кременеччина — це унікальний край.</p> 
+          </div>    
+        </div>
+        <div class="col-12 col-md-6 left-museumtwo"></div>
+      </div>
+    </div> 
+  </section>
+
+    <!-- <section id="museums">
         <div class="container">
           <div class="museum-left-right">
-            <div class="left-museumone">
-            </div>
+            <div class="left-museumone"></div>
             <div class="right-museumone">
               <div>
                 <p class="right-text-museum">Дізнатися про Кременець можна значно більше, відвідавши родинну садибу Словацьких, нині – обласний літературно-меморіальний музей Юліуша Словацького.
-                  Фонди краєзнавчого музею налічують понад 50 тисяч експонатів. Тут проводять майстер-класи з народних промислів, можна придбати сувеніри. У літературно-меморіальному музеї Юліуша Словацького є вісім кімнат-залів, кожна з яких присвячена певному періоду життя відомого поета.  Цей музей, єдиний в Україні, присвячений життю драматурга.</p>
+                  Фонди музею налічують понад 50 тисяч експонатів. Тут проводять майстер-класи з народних промислів, можна придбати сувеніри. У літературно-меморіальному музеї Юліуша Словацького є вісім кімнат-залів, кожна з яких присвячена певному періоду життя відомого поета.  Цей музей, єдиний в Україні, присвячений життю драматурга.</p>
               </div>
             </div>  
           </div>
         </div>
-      </div>
       <div class="container">
         <div class="museum-left-right">
           <div class="right-museumtwo">
@@ -85,7 +137,7 @@
           <div class="left-museumtwo"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     
     <section id="attractions" class="parallax-poster header-poster d-flex align-items-center justify-cotent-center">
       <div class="container"><h3 class="title">Пам'ятки</h3></div>
@@ -140,22 +192,6 @@
       </div>
     </section>
 
-    <!-- <section>
-      <div class="section-left-right">
-        <div class="left position-relative ">
-          <div class="block-desc">
-          <h3>Санна траса</h3>
-          <p>Санна траса, чи не єдина діюча в Україні. Протяжність траси 1000 метрів. Кілька із 12 віражів можна спробувати будь-кому, хто виявить таке бажання. Цікаве і місце розташування санної траси. Урочище “Гниле озеро”, це місце не тільки для спорту, а й для відпочинку. Тут проводять міжнародні змагання із санкороликів.</p>
-          </div>
-        </div>
-        <div class="right position-relative ">
-          <div>
-            <img src="./img/track.jpg">
-          </div>
-        </div>  
-      </div>
-    </section> -->
-
     <section id="a-little-extreme" class="parallax-burning header-burning d-flex align-items-center justify-cotent-center">
       <div class="container"><h3 class="title">Трішки екстрималу</h3></div>
     </section>
@@ -163,14 +199,15 @@
     <section class="container">
       <div class="second-block">
         <img src="./img/rocks.jpg"/>
-        <h3 class="second-title">Дівочі скелі</h3>
+        <div><h3 class="second-title">Дівочі скелі</h3></div>
+        
         <p>Дівочі скелі, теж легендарне місце. Легенда про дівчат, котрі сплелися косами і впали із гори донизу додає цим скелям загадковості. Це місце, яке вабить туристів. Важко повірити, що це все природні утворення, до яких не докладала рук людина. Величезні кам’яні брили та стрімкі вершини нагадують місцями Карпати. Дівочі скелі випробовують навіть місцеві скелелази.</p>
       </div>
 
       <div class="second-block">
         <img src="./img/catacomb.jpg"/>
-        <h3 class="second-title">Катакомби - колишні каменоломні</h3>
-        <p>Далі пропонуємо трішки екстриму.  Місцеві катакомби - колишні каменоломні. Хоча вони знаходяться на маловідомій для приїжджих горі Сичівка, але шукати їх - це вже приємне задоволення. Для подорожі варто запросити когось із місцевих, до того ж з ліхтариком і теплим одягом. Катакомби – одноярусні, приблизно 100 метрів завширшки і  понад 70 метрів довжини. Тут небезпечно, бо можна заблукати, але цікаво. Особливо сподобається тим, хто любить печери.</p>
+        <div><h3 class="second-title">Катакомби - колишні каменоломні</h3></div>
+        <p>Далі пропонуємо трішки екстриму. Місцеві катакомби - колишні каменоломні. Хоча вони знаходяться на маловідомій для приїжджих горі Сичівка, але шукати їх - це вже приємне задоволення. Для подорожі варто запросити когось із місцевих, до того ж з ліхтариком. Катакомби – одноярусні, приблизно 100 метрів завширшки і понад 70 метрів довжини. Тут небезпечно, бо можна заблукати, але цікаво.</p>
       </div>
     </section>
 
@@ -193,7 +230,7 @@
       </div>
     </section>
 
-    <section id="landscape">
+    <!-- <section id="landscape">
       <div id="carouselExampleIndicators" class="container carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -241,7 +278,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </section>
+    </section> -->
 
     <section id="recreation-complex">
       <div class="complex">
@@ -270,7 +307,7 @@
         </div>
       </div>
 
-      <!-- <div class="container"> -->
+      <div class="container-xxl">
         <div class="works">
           <div class="works_item">
             <img class="works_photo" src="/img/panoramatwo.jpg" alt="">
@@ -284,7 +321,7 @@
           <div class="works_item">
             <img class="works_photo" src="/img/panoramasix.jpg" alt="">
             <div class="works_content">
-              <div class="works_title">Просторовий тренажерний зал</div>
+              <div class="works_title">Тренажерний зал</div>
             </div>
           </div>
           <div class="works_item">
