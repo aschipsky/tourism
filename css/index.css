@@ -51,7 +51,7 @@ a:hover, a:focus {
 }
 
 .navbar-light .navbar-brand {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -60,12 +60,10 @@ a:hover, a:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
+    color: #000000;
 }
 
-.bg-light {
-    background-color: rgba(0, 0, 0, 0.473)!important;
-}
+
 
 .navbar-nav .dropdown-menu {
     left: -120px;
@@ -83,6 +81,11 @@ a:hover, a:focus {
 
 .carousel-caption h5 {
     font-size: 40px;
+    background-color: #3f2f2f69;
+}
+
+.carousel-caption p {
+    background-color:  #3f2f2f69;
 }
 
 /** Header and **/
@@ -384,7 +387,7 @@ a:hover, a:focus {
 .item-left-right .left {
     display: flex;
     width: 50%;
-    background: orangered;
+    background: #ff4500de;
     padding: 50px;
     justify-content: center;
     align-items: center;
@@ -418,7 +421,7 @@ a:hover, a:focus {
 .item-left-right .right {
     display: flex;
     width: 50%;
-    background: #441bacc2;
+    background: #80878f;
     padding: 50px;
     justify-content: center;
     align-items: center;
