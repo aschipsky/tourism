@@ -33,16 +33,12 @@ a:hover, a:focus {
 
 /** Header start **/
 
-.animate__animated .animate__fadeInUp {
-  --animate-duration: 2s;
-}
-
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgb(110, 27, 27);
 }
 
 .navbar-brand {
-    color: #101521;
+    color: #ffffff;
     font-weight: bolder;
     font-size: 22px;
     letter-spacing: 1px;
@@ -51,11 +47,26 @@ a:hover, a:focus {
 }
 
 .navbar-dark .navbar-brand {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
 .navbar {
     height: 70px;
+    padding-top: 0;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.473)!important;
+}
+
 .navbar-nav .dropdown-menu {
     left: -120px;
 }
@@ -68,11 +79,11 @@ a:hover, a:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
-  .carousel-caption h5 {
-      font-size: 40px;
-  }
+.carousel-caption h5 {
+    font-size: 40px;
+}
 
 /** Header and **/
 
@@ -107,8 +118,7 @@ a:hover, a:focus {
 }
 
 .right-museumone {
-    /* height: 475px; */
-    background-color: #629096;
+    background-color: lightslategrey;
     padding: 50px;
     justify-content: center;
     align-items: center;
@@ -116,8 +126,7 @@ a:hover, a:focus {
 }
 
 .right-museumtwo {
-    /* height: 475px; */
-    background-color: #629096;
+    background-color: lightslategrey;
     padding: 50px;
     justify-content: center;
     align-items: center;
@@ -158,8 +167,6 @@ a:hover, a:focus {
 
 /** Section end **/
 
-
-/** Section start **/
 
 
 /** Section start **/
@@ -307,57 +314,6 @@ a:hover, a:focus {
 
 /** Section and **/
 
-/** Section start **/
-
-
-
-/** Section and **/
-
-
-/** Section start **/
-
-/* .section-left-right {
-    display: flex;
-    width: 100%;
-    height: 500px;
-    position: relative;
-}
-
-.section-left-right .left {
-    width: 50%;
-}
-
-.position-relative {
-position: relative;
-}
-
-.section-left-right .right {
-    display: flex;
-    width: 50%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-left-right .right  img {
-       width: 70%;
-       position: absolute;
-       top: 0;
-       left: 3%;
-       height: 350px;
-}
-
-.block-desc {
-    position: absolute;
-    background:#7DEFFF;
-    height: 450px;
-    width: 350px;
-    bottom: 0;
-    left: 12%;
-} */
-
-/** Section and **/
-
 
 /** Section start **/
 
@@ -428,7 +384,7 @@ position: relative;
 .item-left-right .left {
     display: flex;
     width: 50%;
-    background: #1167a0;
+    background: orangered;
     padding: 50px;
     justify-content: center;
     align-items: center;
@@ -462,7 +418,7 @@ position: relative;
 .item-left-right .right {
     display: flex;
     width: 50%;
-    background: #001aff;
+    background: #441bacc2;
     padding: 50px;
     justify-content: center;
     align-items: center;
@@ -470,26 +426,6 @@ position: relative;
 
 
 /** Section and **/
-
-
-/** Section start **/
-
-.carousel_one {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.carousel-item_one {
-    display: flex;
-    max-height: 550px;
-}
-
-.carousel-item_one img {
-    object-fit: cover;
-}
-
-
-/** Section and *
 
 
 /** Section start **/ 
@@ -569,7 +505,7 @@ position: relative;
 .complex_blog-blog {
     width: 75%;
     height: 300px;
-    background-color: #E00F0F;
+    background-color: rgb(222 40 0);
     position: relative;
     overflow: hidden;
 }
@@ -728,13 +664,15 @@ position: relative;
     }
 }
 
-@media (max-width: 991px) {
-    .navbar-nav {
-    background-color:#f8f9fa;
-    padding-left: 15px;
-}
 
 @media only screen and (max-width: 991px) {
+    .navbar-nav {
+        background-color:#f8f9fa;
+        padding-left: 15px;
+    }    
+    .navbar-light .navbar-nav .nav-link {
+        color: black;
+    }
     .right-text-museum {
         font-size: 14px;
     }
@@ -1001,6 +939,9 @@ position: relative;
     .second-block {
         height: 487px;
     }
+    .title {
+        font-size: 38px;
+    }
 }
 
 @media only screen and (max-width: 417px) {
@@ -1024,14 +965,20 @@ position: relative;
     .complex_photo {
         height: 250px;
     }
+    .carousel-caption h5 {
+        font-size: 34px;
+    }
 }
 
 @media only screen and (max-width: 351px) {
     .second-block {
-        height: 500px;
+        height: 523px;
     }
     .second-block h3 {
         margin-left: 18px;
+    }
+    .second-block img {
+        height: 107px;
     }
     .item-left-right .item-photo {
         height: 252px;
@@ -1045,6 +992,9 @@ position: relative;
     }
     .works_title {
         font-size: 21px;
+    }
+    .title {
+        font-size: 35px;
     }
 }
 
@@ -1068,4 +1018,4 @@ position: relative;
     .complex_item-photo {
         height: 182px;
     }
-}}
+}
