@@ -26,7 +26,7 @@
           <li class="nav-item active">
             <a class="nav-link " href="#home">Головна</a>
           </li>
-          <li id="">
+          <li>
             <a class="nav-link" href="#museums">Музеї</a>
           </li>
           <li class="nav-item">
@@ -37,7 +37,7 @@
               Більше
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarResponsiveMenuLink">
-              <li><a class="dropdown-item " href="#sortive-complex">Сортивний комплекс</a</li>
+              <li><a class="dropdown-item " href="#sortive-complex">Сортивний комплекс</a></li>
               <li><a class="dropdown-item " href="#a-little-extreme">Трішки екстрималу</a></li>
               <li><a class="dropdown-item " href="#religious-places">Релігійні місця</a></li>
               <li><a class="dropdown-item " href="#recreation-complex">Відпочинковий комплекс</a></li>
@@ -55,6 +55,7 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" style="background-image: url('./img/header.png')">
@@ -75,6 +76,7 @@
             <p data-wow-duration="2s" class="wow animate__animated animate__fadeIn">Кременець – одне з найдавніших міст України.</p>
           </div>
         </div>
+        <div class="carousel-item" style="background-image: url('./img/UA.jpg')"></div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -86,38 +88,40 @@
       </button>
     </div>
   </header>
-
-    <section id="museums">
-      <div class="container museum ">
-        <div class="row m-0 ">
-          <div  data-wow-duration="2s" class="col-12 col-md-6 left-museumone wow animate__animated animate__backInLeft"></div>
-          <div  data-wow-duration="2s" class="col-12 col-md-6 align-items-musem wow animate__animated animate__backInRight">
-            <div class="right-museumone ">
-              <p class="right-text-museum">Дізнатися про Кременець можна значно більше, відвідавши родинну садибу Словацьких, нині – обласний літературно-меморіальний музей Юліуша Словацького.
-                  Фонди музею налічують понад 50 тисяч експонатів. Тут проводять майстер-класи з народних промислів, можна придбати сувеніри. У літературно-меморіальному музеї Юліуша Словацького є вісім кімнат-залів, кожна з яких присвячена певному періоду життя відомого поета.  Цей музей, єдиний в Україні, присвячений життю драматурга.</p>
-            </div>    
-          </div>
+   
+    <section class="museum container" id="museum">
+      <div class="row">
+        <div class="museum-img">
+          <img src="./img/museumone.jpg" alt="kremenets">
         </div>
-      </div> 
-
-      <div class="container museum">
-        <div class="row m-0 ">
-          <div  data-wow-duration="2s" class="col-12 col-md-6 align-items-musem wow animate__animated animate__backInLeft">
-            <div class="right-museumtwo">
-              <p class="right-text-museum">Також дізнатися про Кременець можна значно більше, відвідавши  Краєзнавчий музей. На сьогодні в музеї знаходиться близько 70 тисяч експонатів. Також представлені експонати, які надійшли на виставку із Запоріжжя. Музей починається із залу природи. Кременеччина — це унікальний край.</p> 
-            </div>    
+        <div class="museum-text">
+          <span>Музей</span>
+          <h2>Юліуша Словацького</h2>
+          <p>Дізнатися про Кременець можна значно більше, відвідавши родинну садибу Словацьких, нині – обласний літературно-меморіальний музей Юліуша Словацького.
+            <p>Фонди музею налічують понад 50 тисяч експонатів. Тут проводять майстер-класи з народних промислів, можна придбати сувеніри. </p>
+            <p>У літературно-меморіальному музеї Юліуша Словацького є вісім кімнат-залів, кожна з яких присвячена певному періоду життя відомого поета.  Цей музей, єдиний в Україні, присвячений життю драматурга.</p>
+          <a href="#" class="btn">Читати Більше </a>
           </div>
-          <div  data-wow-duration="2s" class="col-12 col-md-6 left-museumtwo wow animate__animated animate__backInRight"></div>
+      </div>    
+      <div class="row">
+        <div class="museum-text">
+          <span>Музей</span>
+          <h2>Юліуша Словацького</h2>
+          <p>Дізнатися про Кременець можна значно більше, відвідавши родинну садибу Словацьких, нині – обласний літературно-меморіальний музей Юліуша Словацького.
+            <p>Фонди музею налічують понад 50 тисяч експонатів. Тут проводять майстер-класи з народних промислів, можна придбати сувеніри. </p>
+            <p>У літературно-меморіальному музеї Юліуша Словацького є вісім кімнат-залів, кожна з яких присвячена певному періоду життя відомого поета.  Цей музей, єдиний в Україні, присвячений життю драматурга.</p>
+          <a href="#" class="btn">Читати Більше </a>
         </div>
-      </div> 
+        <div class="museum-img">
+          <img src="./img/museumtwo.jpg" alt="kremenets">
+        </div>
+      </div>  
     </section>
-
     
     <section id="attractions" class="parallax-poster header-poster d-flex align-items-center justify-cotent-center">
       <div data-wow-duration="2s" class="container wow animate__animated animate__fadeIn"><h3 class="title">Пам'ятки</h3></div>
     </section>
-
-    
+ 
     <section>
       <div class="block-left-right">
         <div class="parallax-bona left-bona">
@@ -170,11 +174,38 @@
       <div data-wow-duration="2s" class="container wow animate__animated animate__fadeIn"><h3 class="title">Трішки екстрималу</h3></div>
     </section>
 
-    <section class="container">
+    <section class=" parallax-mountains">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col card-extremetwo ">
+            <div class="card">
+              <img src="./img/catacomb.jpg" class="card-img-top" alt="kremenets">
+              <div class="card-body">
+                <h5 class="card-title">Катакомби</h5>
+                <p class="card-text">Далі пропонуємо трішки екстриму. Місцеві катакомби - колишні каменоломні. Хоча вони знаходяться на маловідомій для приїжджих горі Сичівка, але шукати їх - це вже приємне задоволення. Катакомби – одноярусні, приблизно 100 метрів завширшки і понад 70 метрів довжини. Тут небезпечно, бо можна заблукати, але цікаво.</p>
+                <a href="https://ua-travels.livejournal.com/2809640.html" class="btn btn-primary">Читати Більше</a>
+              </div>
+            </div>
+          </div>
+          <div class="col card-extremeone">
+            <div class="card">
+              <img src="./img/rocks.jpg" class="card-img-top" alt="kremenets">
+              <div class="card-body">
+                <h5 class="card-title">Дівочі скелі</h5>
+                <p class="card-text">Дівочі скелі, теж легендарне місце. Легенда про дівчат, котрі сплелися косами і впали із гори донизу додає цим скелям загадковості. Це місце, яке вабить туристів. Важко повірити, що це все природні утворення, до яких не докладала рук людина. Величезні кам’яні брили та стрімкі вершини нагадують місцями Карпати.</p>
+                <a href="https://kolokray.com/uk/f/kremenets-devichi-slozy.html" class="btn btn-primary">Читати Більше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="container">
       <div class="second-block">
         <img src="./img/rocks.jpg"/>
         <div><h3 data-wow-duration="2s" class="second-title wow animate__animated animate__fadeIn">Дівочі скелі</h3></div>
-        <p data-wow-duration="2s" class="wow animate__animated animate__fadeIn">Дівочі скелі, теж легендарне місце. Легенда про дівчат, котрі сплелися косами і впали із гори донизу додає цим скелям загадковості. Це місце, яке вабить туристів. Важко повірити, що це все природні утворення, до яких не докладала рук людина. Величезні кам’яні брили та стрімкі вершини нагадують місцями Карпати. Дівочі скелі випробовують навіть місцеві скелелази.</p>
+        <p data-wow-duration="2s" class="wow animate__animated animate__fadeIn">Дівочі скелі, теж легендарне місце. Легенда про дівчат, котрі сплелися косами і впали із гори донизу додає цим скелям загадковості. Це місце, яке вабить туристів. Важко повірити, що це все природні утворення, до яких не докладала рук людина. Величезні кам’яні брили та стрімкі вершини нагадують місцями Карпати.</p>
       </div>
 
       <div class="second-block">
@@ -182,21 +213,21 @@
         <div><h3 data-wow-duration="2s" class="second-title wow animate__animated animate__fadeIn">Катакомби - колишні каменоломні</h3></div>
         <p data-wow-duration="2s" class="wow animate__animated animate__fadeIn">Далі пропонуємо трішки екстриму. Місцеві катакомби - колишні каменоломні. Хоча вони знаходяться на маловідомій для приїжджих горі Сичівка, але шукати їх - це вже приємне задоволення. Для подорожі варто запросити когось із місцевих, до того ж з ліхтариком. Катакомби – одноярусні, приблизно 100 метрів завширшки і понад 70 метрів довжини. Тут небезпечно, бо можна заблукати, але цікаво.</p>
       </div>
-    </section>
+    </section> -->
 
     <section id="religious-places"> 
       <div class="item-left-right">
         <div class="left">
           <div>
             <h3 data-wow-duration="2s" class="item-title wow animate__animated animate__fadeInDown">Комплекс споруд Єзуїтського колегіуму</h3>
-            <img class="item-photo" src="./img/buildingone.jpg" alt="">
+            <img class="item-photo" src="./img/buildingone.jpg" alt="kremenets">
             <p data-wow-duration="3s" class="item-text wow animate__animated animate__zoomIn">Архітектурний комплекс споруд Єзуїтського колегіуму, одне із найгарніших місць Кременця, знаходиться по вулиці Ліцейній. Сам архітектурний комплекс складається з двох навчальних корпусів, які прилягають до Собору Преображення Господнього.  Це другий об’єкт, де варто побувати у Кременці, коли ви тут вперше. У внутрішньому дворику потрібно зробити кілька пам’ятних фото. Камінні стіни, сходи та балюстрада додають екзотики та навіюють чогось середньовічного.</p>
           </div>
         </div>  
         <div class="right">
           <div>
             <h3 data-wow-duration="2s" class="item-title wow animate__animated animate__fadeInDown">Костел Святого Станіслава</h3>
-            <img class="item-photo" src="./img/buildingtwo.jpg" alt="">
+            <img class="item-photo" src="./img/buildingtwo.jpg" alt="kremenets">
             <p data-wow-duration="3s" class="item-text wow animate__animated animate__zoomIn">Костел Святого Станіслава. Велике враження справляє не лише інтер'єр храму, а й оригінальне звучання органу, який створений ще у 1886 році у Вільно. Орган у Костелі Святого станіслава у Кременці, залишається одним із небагатьох діючих в Україні. Храм розташований по головній вулиці міста – вул. Шевченка. Привертає увагу здалеку мармуровою чашею з барельєфом Богоматері. В  костелі є пам'ятник відомому польському поету Юліушу Словацькому.</p>
           </div>
         </div>  
@@ -212,7 +243,7 @@
           </div>
         </div>
         <div class="complex_item-photo">
-          <img class="complex_photo" src="./img/panoramaone.jpg" alt="">
+          <img class="complex_photo" src="./img/panoramaone.jpg" alt="kremenets">
         </div>
       </div>
 
@@ -233,37 +264,37 @@
       <div class="container-xxl">
         <div class="works">
           <div class="works_item">
-            <img class="works_photo" src="./img/panoramatwo.jpg" alt="">
+            <img class="works_photo" src="./img/panoramatwo.jpg" alt="kremenets">
             <div class="works_content">
               <div class="works_title">Вишукані номери</div>
             </div>
           </div>
           <div class="works_item">
-            <img class="works_photo " src="./img/panoramathree.jpg" alt="">
+            <img class="works_photo " src="./img/panoramathree.jpg" alt="kremenets">
           </div>
           <div class="works_item">
-            <img class="works_photo" src="./img/panoramasix.jpg" alt="">
+            <img class="works_photo" src="./img/panoramasix.jpg" alt="kremenets">
             <div class="works_content">
               <div class="works_title">Тренажерний зал</div>
             </div>
           </div>
           <div class="works_item">
-            <img class="works_photo" src="./img/panoramafive.jpg" alt="">
+            <img class="works_photo" src="./img/panoramafive.jpg" alt="kremenets">
           </div>
           <div class="works_item">
-            <img class="works_photo" src="./img/panoramasevent.jpg" alt="">
+            <img class="works_photo" src="./img/panoramasevent.jpg" alt="kremenets">
           </div>
           <div class="works_item">
-            <img class="works_photo" src="./img/panoramahall.jpg" alt="">
+            <img class="works_photo" src="./img/panoramahall.jpg" alt="kremenets">
             <div class="works_content">
               <div class="works_title">Концертний зал</div>
             </div>
           </div>
           <div class="works_item">
-            <img class="works_photo" src="./img/panoramafont.jpg" alt="">
+            <img class="works_photo" src="./img/panoramafont.jpg" alt="kremenets">
           </div>
           <div class="works_item">
-            <img class="works_photo" src="./img/panoramafive.jpg" alt="">
+            <img class="works_photo" src="./img/panoramafive.jpg" alt="kremenets">
             <div class="works_content">
               <div class="works_title">Вишукані смачні страви</div>
             </div>
@@ -297,6 +328,8 @@
         </div>
       </div>
     </footer>
+
+
 
                 
     <script src="js/wow.min.js"></script>

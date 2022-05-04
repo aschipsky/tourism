@@ -30,6 +30,17 @@ a:hover, a:focus {
     outline: 0;
 }
 
+.btn {
+    padding: 8px 22px;
+    background: #3492fd;
+    color: white;
+    border-radius: 5rem;
+}
+
+.btn:hover {
+    background: #3180db;
+}
+
 
 /** Header start **/
 
@@ -57,6 +68,8 @@ a:hover, a:focus {
 .navbar {
     height: 70px;
     padding-top: 0;
+    border-radius: 100px;
+    margin: 10px 30px 0 30px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -88,11 +101,48 @@ a:hover, a:focus {
     background-color:  #3f2f2f69;
 }
 
-/** Header and **/
+/** Header end **/
 
-/** Section one start **/
+/** Section museum start **/
 
 .museum {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
+    gap: 2rem;
+}
+
+.museum-img img{
+    border-radius: 5rem 0 5rem 4rem;
+    height: 400px;
+    width: 500px;
+    margin: 50px 0 50px 0;
+}
+
+.museum-text {
+    margin: 50px 0 50px 0;
+}
+
+.museum-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(158, 166, 240);
+}
+
+.museum-text h2 {
+    font-size: 1.7rem;
+    color: #000;
+}
+
+.museum-text p {
+    font-size: 0.938rem;
+    margin: 1rem 0 1rem;
+    color: #80878f;
+}
+
+
+
+/* .museum {
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -139,7 +189,12 @@ a:hover, a:focus {
 .right-text-museum {
     font-size: 20px;
     color: white;
-}
+} */
+
+/** Section museum end **/
+
+
+/** Section memorial start **/
 
 .header-poster {
     width: 100%;
@@ -168,11 +223,7 @@ a:hover, a:focus {
     text-align: center;
 }
 
-/** Section end **/
 
-
-
-/** Section start **/
 
 .block-left-right {
     display: flex;
@@ -252,6 +303,11 @@ a:hover, a:focus {
     color: white;
 }
 
+/** Section memorial end **/
+
+
+/** Section sport start **/
+
 .header-stadion {
     width: 100%;
     height: 400px;
@@ -272,6 +328,7 @@ a:hover, a:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 .block-left-right .left-track {
     background-repeat: no-repeat;
@@ -315,10 +372,10 @@ a:hover, a:focus {
     background-size: cover;
 }
 
-/** Section and **/
+/** Section sport and **/
 
 
-/** Section start **/
+/** Section extreme start **/
 
 .header-burning {
     width: 100%;
@@ -342,7 +399,52 @@ a:hover, a:focus {
 }
 
 
-.second-block {
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #f4f5f500;
+    background-clip: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0.25rem;
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.card h5 {
+    color: #3d3131;
+}
+
+.card p {
+    color: #3d3131;
+}
+
+.card-extremeone {
+    padding: 50px 12px 50px 20px;
+}
+
+.card-extremetwo {
+    padding: 520px 12px 50px 20px;
+}
+
+
+.parallax-mountains {
+    background: rgba(255, 255, 255, 0);
+    background: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+        ),
+        url(/img/pngwingone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .second-block {
     background: rgb(4, 24, 37);
     position: relative;
     height: 400px;
@@ -371,9 +473,9 @@ a:hover, a:focus {
     font-weight: 400;
     text-align: center;
     color: white;
-}
+} */
 
-/** Section and **/
+/** Section extreme and **/
 
 
 /** Section start **/ 
@@ -431,7 +533,7 @@ a:hover, a:focus {
 /** Section and **/
 
 
-/** Section start **/ 
+/** Section comfort start **/ 
 
 .complex {
     display: flex;
@@ -573,7 +675,7 @@ a:hover, a:focus {
     color: #ffffff;
 }
 
-/** Section  end **/
+/** Section comfort end **/ 
 
 /** foter start **/
 
@@ -606,6 +708,7 @@ a:hover, a:focus {
 }
 
 /** foter end **/
+
 
 
 @media only screen and (max-width: 1601px) {
