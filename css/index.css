@@ -41,6 +41,53 @@ a:hover, a:focus {
     background: #3180db;
 }
 
+.upward {
+    position: fixed;
+    bottom: 10px;
+    right: 6px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.5s;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: #00000085;
+}
+.upward.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.upward::before,
+.upward::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upward::before {
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: #ffffff;
+}
+
+.upward::after {
+    width: 19px;
+    height: 19px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid #ffffff;
+}
+
+
 
 /** Header start **/
 
@@ -70,6 +117,13 @@ a:hover, a:focus {
     padding-top: 0;
     border-radius: 100px;
     margin: 10px 30px 0 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.navbar.hide {
+    transform: translateY(-300px);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -103,6 +157,8 @@ a:hover, a:focus {
 
 /** Header end **/
 
+
+
 /** Section museum start **/
 
 .museum {
@@ -112,10 +168,10 @@ a:hover, a:focus {
 }
 
 .museum-img img{
-    border-radius: 5rem 0 5rem 4rem;
-    height: 400px;
-    width: 500px;
-    margin: 50px 0 50px 0;
+    border-radius: 5rem 5rem 5rem 4rem;
+    height: 379px;
+    width: 479px;
+    margin: 50px 0 32px 0;
 }
 
 .museum-text {
@@ -139,57 +195,6 @@ a:hover, a:focus {
     margin: 1rem 0 1rem;
     color: #80878f;
 }
-
-
-
-/* .museum {
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-
-.align-items-center {
-    display: flex;
-    margin: 0;
-}
-
-.left-museumone {
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    height: 475px;
-    background-image: url(../img/museumone.jpg);
-    margin-top: 30px;
-}
-
-.left-museumtwo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    height: 475px;
-    background-image: url(../img/museumtwo.jpg);
-    margin-top: 30px;
-}
-
-.right-museumone {
-    background-color: lightslategrey;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 88% 12% 86% 14% / 11% 88% 12% 89% ;
-}
-
-.right-museumtwo {
-    background-color: lightslategrey;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 43% 57% 80% 20% / 33% 49% 51% 67% ;
-}
-
-.right-text-museum {
-    font-size: 20px;
-    color: white;
-} */
 
 /** Section museum end **/
 
@@ -416,11 +421,11 @@ a:hover, a:focus {
 }
 
 .card h5 {
-    color: #3d3131;
+    color: #ffffff;
 }
 
 .card p {
-    color: #3d3131;
+    color: #ffffff;
 }
 
 .card-extremeone {
@@ -431,6 +436,10 @@ a:hover, a:focus {
     padding: 520px 12px 50px 20px;
 }
 
+.card-body {
+    background-color: #00000069;
+}
+
 
 .parallax-mountains {
     background: rgba(255, 255, 255, 0);
@@ -438,44 +447,11 @@ a:hover, a:focus {
             rgba(255, 255, 255, 0),
             rgba(255, 255, 255, 0)
         ),
-        url(/img/pngwingone.png);
+        url(/img/pngwing.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* .second-block {
-    background: rgb(4, 24, 37);
-    position: relative;
-    height: 400px;
-    padding: 30px;
-    margin: 100px 0;
-}
-
-
-.second-block img {
-    position: absolute;
-    top: -40px;
-    right: 50px;
-    height: 200px
-}
-
-.second-title {
-    width: 16em;
-    height: 152px;
-    text-align: center;
-    font-size: 36px;
-    padding-top: 16px;
-}
-
-.second-block p {
-    font-size: 22px;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-} */
-
-/** Section extreme and **/
 
 
 /** Section start **/ 
@@ -679,24 +655,86 @@ a:hover, a:focus {
 
 /** foter start **/
 
+.wrapper {
+    display: inline-flex;  
+}
+.wrapper .icon {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    flex-direction column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.wrapper .icon span {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    display: block;
+    background: #ffff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper .icon span i {
+    font-size: 25px;
+    line-height: 35px;
+}
+.wrapper .icon .toolti {
+    position: absolute;
+    margin: 0 -24px;
+    top: 0px;
+    background: #ffffff;
+    font-size: 15px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .toolti {
+    top: -40px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .icon .toolti:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .toolti{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .toolti,
+.wrapper .facebook:hover .toolti:before {
+    background: #28328f;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .toolti,
+.wrapper .instagram:hover .toolti:before {
+    background: #a80845;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .toolti,
+.wrapper .youtube:hover .toolti:before {
+    background: #ff0000;
+}
+
 .footer {
     padding: 50px 0;
     background: #100E24;
-}
-
-.footer-menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0;
-}
-
-.footer-menu li {
-    margin: 0 20px;
-}
-
-.footer-left {
-    padding: 30px;
 }
 
 .footer-title {
@@ -722,20 +760,9 @@ a:hover, a:focus {
 }
 
 @media only screen and (max-width: 1199px) {
-    .right-text-museum {
-        font-size: 16px;
-    }
-    .second-block {
-        height: 325px;
-    }
-    .second-block img {
-        height: 160px;
-    }
-    .second-block h3 {
-        font-size: 24px;
-    }
-    .second-block p {
-        font-size: 16px;
+    .museum-img img {
+        height: 321px;
+        width: 428px;
     }
     .complex_text {
         font-size: 30px;
@@ -760,17 +787,6 @@ a:hover, a:focus {
     }
 }
 
-@media only screen and (max-width: 1020px) {
-    .second-block h3 {
-        margin-left: -94px;
-        height: 126px;
-    }
-    .second-block img {
-        height: 144px;
-    }
-}
-
-
 @media only screen and (max-width: 991px) {
     .navbar-nav {
         background-color:#f8f9fa;
@@ -779,8 +795,9 @@ a:hover, a:focus {
     .navbar-light .navbar-nav .nav-link {
         color: black;
     }
-    .right-text-museum {
-        font-size: 14px;
+    .museum-img img {
+        height: 286px;
+        width: 336px;
     }
     .item-left-right {
         height: 650px;
@@ -835,9 +852,12 @@ a:hover, a:focus {
 }
 
 @media only screen and (max-width: 767px) {
-    .align-items-musem {
-        order: 2;
-        margin-top: 30px;
+    .museum-img img {
+        height: 379px;
+        width: 479px;
+    }
+    .footer-top {
+        text-align: center;
     }
 }
 
@@ -878,20 +898,8 @@ a:hover, a:focus {
 }
 
 @media only screen and (max-width: 767px) {
-    .second-title {
-        width: 23em;
-        margin-top: 55px;
-        margin-top: 90px;
-    }
-    .second-block h3 {
-        margin-left: -52px;
-        height: 60px;
-    }
-    .second-block {
-        height: 413px;
-    }
-    .second-block img {
-        right: 84px;
+    .card-extremetwo {
+        padding: 72px 12px 50px 20px;
     }
     .right-text {
         font-size: 17px;
@@ -1015,20 +1023,12 @@ a:hover, a:focus {
     .complex_title {
         font-size: 27px;
     }
-    .second-block h3 {
-        width: auto;
-    }
 }
 
 @media only screen and (max-width: 525px) {
-    .second-block img {
-        right: 60px;
-    }
-    .second-block h3 {
-        margin-left: 28px;
-    }
-    .second-block {
-        height: 438px;
+    .museum-img img {
+        height: 331px;
+        width: 431px;
     }
     .works_item {
         width: 50%;
@@ -1036,14 +1036,9 @@ a:hover, a:focus {
 }
 
 @media only screen and (max-width: 460px) {
-    .second-block img {
-        right: 23px;
-    }
-    .second-block h3 {
-        margin-left: 28px;
-    }
-    .second-block {
-        height: 487px;
+    .museum-img img {
+        height: 258px;
+        width: 342px;
     }
     .title {
         font-size: 38px;
@@ -1058,16 +1053,6 @@ a:hover, a:focus {
         margin-left: auto;
         width: 17em;
     }
-    .second-block img {
-        height: 115px;
-        right: 22px;
-    }
-    .second-title {
-        margin-top: 60px;
-    }
-    .second-block {
-        height: 484px;
-    }
     .complex_photo {
         height: 250px;
     }
@@ -1076,16 +1061,14 @@ a:hover, a:focus {
     }
 }
 
+@media only screen and (max-width: 367px) {
+    .museum-img img {
+        height: 207px;
+        width: 278px;
+    }
+}
+
 @media only screen and (max-width: 351px) {
-    .second-block {
-        height: 523px;
-    }
-    .second-block h3 {
-        margin-left: 18px;
-    }
-    .second-block img {
-        height: 107px;
-    }
     .item-left-right .item-photo {
         height: 252px;
         width: 300px;
@@ -1104,19 +1087,9 @@ a:hover, a:focus {
     }
 }
 
-@media only screen and (max-width: 341px) {
-    .second-block h3 {
-        margin-left: 9px;
-        font-size: 22px;
-    }
-}
-
 @media only screen and (max-width: 338px) {
     .title {
         font-size: 41px;
-    }
-    .second-block img {
-        height: 100px;
     }
     .complex_photo {
         height: 180px;
