@@ -356,11 +356,11 @@ a:hover, a:focus {
 }
 
 .block-left-right .left-ladders {
-    background-repeat: round;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     object-fit: cover;
     width: 50%;
-    background-image: url(../img/ladders.jpeg);
+    background-image: url(../img/ladders.jpg);
 }
 
 .parallax-ladders {
@@ -369,7 +369,7 @@ a:hover, a:focus {
             rgb(0, 0, 0, 0.3),
             rgb(0, 0, 0, 0.8)
         ),
-        url(/img/ladders.jpeg);
+        url(/img/ladders.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
