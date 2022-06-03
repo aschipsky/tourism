@@ -26,7 +26,6 @@ a {
 
 a:hover, a:focus {
     color: rgb(179, 255, 0);
-    text-decoration: mone;
     outline: 0;
 }
 
@@ -357,11 +356,11 @@ a:hover, a:focus {
 }
 
 .block-left-right .left-ladders {
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: round;
+    background-size: contain;
     object-fit: cover;
     width: 50%;
-    background-image: url(../img/ladders.jpg);
+    background-image: url(../img/ladders.jpeg);
 }
 
 .parallax-ladders {
@@ -370,7 +369,7 @@ a:hover, a:focus {
             rgb(0, 0, 0, 0.3),
             rgb(0, 0, 0, 0.8)
         ),
-        url(/img/ladders.jpg);
+        url(/img/ladders.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -662,8 +661,6 @@ a:hover, a:focus {
     margin: 0 20px;
     display: flex;
     align-items: center;
-    justify-content: center
-    flex-direction column;
     position: relative;
     z-index: 2;
     cursor: pointer;
